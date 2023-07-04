@@ -6,4 +6,6 @@ Im wanting to learn more with python and make something for my stream
 
 > latter some popups with obs, via web sourse or obs integration
 
+> intgration with bit/crits rewards 
+
 > alt option lighting up leds behind me when i stream
