@@ -1,5 +1,5 @@
 from twitchio.client import Client
-from twitchio.ext import commands
+from twitchio.ext import commands, eventsub
 from tokens import *
 
 class Bot(commands.Bot):
@@ -32,7 +32,7 @@ class Bot(commands.Bot):
         # Print the contents of our message to console...
         # this mainly is a test to see if the bot is working
         print(ctx.content)
-        print(ctx.author.name)
+        # print(ctx.author.name)
 
         # when calling a command this is needed to be able to use the commands
         # Since we have commands and are overriding the default `event_message`
