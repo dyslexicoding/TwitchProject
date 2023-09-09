@@ -14,7 +14,7 @@ class Bot(commands.Bot):
                         client_secret=altAppClientSecret,
                         prefix='!',
                         initial_channels=['dunewalkerz'])
-
+    
     async def event_ready(self):
         ##will inform if the bot is ready to chat and use commands
         # basicly when it oprational
@@ -45,19 +45,12 @@ class Bot(commands.Bot):
         # Sending a reply back to the channel is easy... Below is an example.
         await ctx.send(f'Hello {ctx.author.name}!')
         
-    @commands.command(name='who')
-    async def get_chatters(self,ctx):
-        
-        #currently this is not working smadge is looking into it
-        chatters = await self.get_chatters('dunewalkerz')
-        print(chatters.all)
-        all_chatters = ' '.join(chatters.all)
-        await ctx.send(f"In chat: {all_chatters}")
-
+    #i want an event reation based on if there is a channel point redemption
 
 
 if __name__ == "__main__":
     bot = Bot()
     #extra command can be added here but think it is better to have them above
+
 
     bot.run()

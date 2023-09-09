@@ -9,3 +9,4 @@ DuneClientID        = os.environ['DuneClientID']
 
 altAppClentID       = os.environ['altAppClentID']
 altAppClientSecret  = os.environ['altAppClientSecret']
+altAppToken         = os.environ['altAppToken']
